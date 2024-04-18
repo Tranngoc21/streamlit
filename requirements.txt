@@ -5,3 +5,7 @@ yfinance
 pandas-datareader
 matplotlib
 streamlit-option-menu
+pandas==1.4.2
+streamlit==1.13.0
+plotly==5.10.0
+matplotlib==3.6.2
