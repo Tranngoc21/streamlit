@@ -64,7 +64,7 @@ with col2:
     figpx = px.line(rating_count_year, x="genre", y="score")
     figpx.update_xaxes(showgrid=True, gridcolor='white', gridwidth=1)
     figpx.update_yaxes(showgrid=True, gridcolor='white', gridwidth=1)
-    figpx.update_layout(width=650, plot_bgcolor='#202324')
+    figpx.update_layout(width=650, plot_bgcolor='#FFFFFF')
     st.plotly_chart(figpx)
 # Creating a bar graph with matplotlib
 st.write(""" Average Movie Budget, Grouped by Genre """)
