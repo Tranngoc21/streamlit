@@ -64,14 +64,6 @@ with col2:
     figpx = px.line(rating_count_year, x = 'genre', y = 'score')
     st.plotly_chart(figpx)
 
-    # st.write("""#### User score of movies and their genre """)
-    # rating_count_year = movies_data[score_info].groupby("genre")["score"].count()
-    # rating_count_year = rating_count_year.reset_index()
-    # figpx = px.line(rating_count_year, x="genre", y="score")
-    # figpx.update_xaxes(showgrid=True, gridcolor='black', gridwidth=1)
-    # figpx.update_yaxes(showgrid=True, gridcolor='black', gridwidth=1)
-    # figpx.update_layout(width=650, plot_bgcolor='#FFFFFF')
-    # st.plotly_chart(figpx)
 # Creating a bar graph with matplotlib
 st.write(""" Average Movie Budget, Grouped by Genre """)
 avg_budget = movies_data.groupby("genre")["budget"].mean().round()
