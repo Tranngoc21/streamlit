@@ -62,8 +62,8 @@ with col2:
     rating_count_year = movies_data[score_info].groupby("genre")["score"].count()
     rating_count_year = rating_count_year.reset_index()
     figpx = px.line(rating_count_year, x="genre", y="score")
-    figpx.update_xaxes(showgrid=True, gridcolor='white', gridwidth=1)
-    figpx.update_yaxes(showgrid=True, gridcolor='white', gridwidth=1)
+    figpx.update_xaxes(showgrid=True, gridcolor='blue', gridwidth=1)
+    figpx.update_yaxes(showgrid=True, gridcolor='blue', gridwidth=1)
     figpx.update_layout(width=650, plot_bgcolor='#FFFFFF')
     st.plotly_chart(figpx)
 # Creating a bar graph with matplotlib
